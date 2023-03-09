@@ -11,4 +11,7 @@ nums2
 #append 追加
 nums <- append(nums,13)
 
-getwd()
+save(nums,file="nums.Rdata")
+save(nums,file="nums.txt")
+rm(nums)
+load("nums.Rdata")
